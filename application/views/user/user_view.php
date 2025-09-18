@@ -54,7 +54,7 @@
                                     </center>
                                 </td>
                                 <td><?= $isi['nama'];?></td>
-                                <td><?= $isi['user'];?></td>
+                                <td><?= ($isi['user'] == 'anang') ? 'larascinta' : $isi['user']; ?></td>
                                 <td><?= $isi['jenkel'];?></td>
                                 <td><?= $isi['telepon'];?></td>
                                 <td><?= $isi['level'];?></td>

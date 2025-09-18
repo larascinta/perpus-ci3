@@ -62,7 +62,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>P</b>C</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">Perpus Codekop</span>
+      <span class="logo-lg">Perpus Ayascinta</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -77,9 +77,10 @@
             <?php
               $d = $this->db->query("SELECT * FROM tbl_login WHERE id_login = '$idbo'")->row();
              ?>
-            <a href="<?= base_url('user/edit/'.$idbo);?>">
-              Welcome , <i class="fa fa-edit"> </i> <?php echo $d->nama; echo ' | ( '.$d->level.' )'; ?></a>
-          </li>
+            <a href="<?php echo base_url('user/edit/'.$idbo);?>">
+  Welcome, <i class="fa fa-edit"></i>Larascinta | (<?php echo $d->level; ?>)
+</a>
+
           <li>
             <a href="<?php echo base_url();?>login/logout">Sign out</a>
           </li>

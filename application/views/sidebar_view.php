@@ -5,25 +5,16 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
-        <div class="pull-left image">
-          <?php
-            $d = $this->db->query("SELECT * FROM tbl_login WHERE id_login='$idbo'")->row();
-            if(isset($d->foto)){
-          ?>
-          <br/>
-          <img src="<?php echo base_url();?>assets_style/image/<?php echo $d->foto;?>" alt="#" c
-          lass="user-image" style="border:2px solid #fff;height:auto;width:100%;"/>
-          <?php }else{?>
-            <!--<img src="" alt="#" class="user-image" style="border:2px solid #fff;"/>-->
-            <i class="fa fa-user fa-4x" style="color:#fff;"></i>
-          <?php }?>
-        </div>
-        <div class="pull-left info" style="margin-top: 5px;">
-          <p><?php echo $d->nama;?></p>
-          <p><?= $d->level;?>
-          </p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+    <img src="<?php echo base_url();?>assets_style/image/fotoku.jpg" 
+         alt="Larascinta" class="user-image" 
+         style="border:2px solid #fff; height:45px; width:45px; border-radius:50%;">
+
+    <div>
+        <p>Larascinta Petugas</p>
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+    </div>
+</div>
         <br/>
         <br/>
         <br/>
